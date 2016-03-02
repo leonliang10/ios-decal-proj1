@@ -85,7 +85,7 @@ class ToDoListModel: NSObject {
     func hasTaskCompletedFor24Hours(taskDescription : String) -> Bool {
         currentTime = NSDate()
         startTime = timerForTask[taskDescription]! as NSDate?
-        if (currentTime!.timeIntervalSinceDate(startTime!) >= oneWholeDay) {
+        if (currentTime!.timeIntervalSinceDate(startTime!) > oneWholeDay) {
             return true
         } else {
             return false

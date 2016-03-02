@@ -93,7 +93,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="IBZ-Hu-Pfz">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="IBZ-Hu-Pfz">
                                 <rect key="frame" x="192" y="385" width="216" height="128"/>
                             </imageView>
                         </subviews>
@@ -101,13 +101,21 @@
                         <constraints>
                             <constraint firstItem="IBZ-Hu-Pfz" firstAttribute="top" secondItem="NMy-1h-y3S" secondAttribute="bottom" constant="82" id="00q-Tc-0EK"/>
                             <constraint firstItem="xbE-f3-kp1" firstAttribute="top" secondItem="VPN-LC-hvH" secondAttribute="bottom" constant="56" id="5ai-ur-g78"/>
+                            <constraint firstItem="vfF-Cp-YbX" firstAttribute="top" secondItem="IBZ-Hu-Pfz" secondAttribute="bottom" constant="87" id="Ft6-VN-8Rf"/>
                             <constraint firstItem="NMy-1h-y3S" firstAttribute="top" secondItem="tOL-oY-jtZ" secondAttribute="bottom" constant="30" id="HNQ-yc-dW0"/>
                             <constraint firstItem="tOL-oY-jtZ" firstAttribute="centerX" secondItem="QRC-4p-cnx" secondAttribute="centerX" id="HrI-GF-Udr"/>
                             <constraint firstItem="NMy-1h-y3S" firstAttribute="centerX" secondItem="QRC-4p-cnx" secondAttribute="centerX" id="Hwn-Ge-Tlf"/>
+                            <constraint firstItem="IBZ-Hu-Pfz" firstAttribute="top" secondItem="xbE-f3-kp1" secondAttribute="bottom" constant="244" id="LWY-8g-dms"/>
                             <constraint firstItem="tOL-oY-jtZ" firstAttribute="top" secondItem="xbE-f3-kp1" secondAttribute="bottom" constant="29" id="YAR-pv-egb"/>
                             <constraint firstItem="IBZ-Hu-Pfz" firstAttribute="centerX" secondItem="QRC-4p-cnx" secondAttribute="centerX" id="mph-uV-mXQ"/>
                             <constraint firstItem="xbE-f3-kp1" firstAttribute="centerX" secondItem="QRC-4p-cnx" secondAttribute="centerX" id="u0f-2S-YAM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="00q-Tc-0EK"/>
+                                <exclude reference="Ft6-VN-8Rf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="yn7-d0-Qtz">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="mrJ-CX-RN6">
