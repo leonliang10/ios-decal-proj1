@@ -20,9 +20,9 @@ class AddToDoItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         addTaskStatusLabel.text = "Enter a new task below"
         taskExistsBoolean = false
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

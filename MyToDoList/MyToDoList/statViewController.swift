@@ -16,8 +16,10 @@ class statViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let numberOfTasksCompletedInPast24Hours = delegate?.numTaskCompleted()
         numberOfTasksCompletedInPast24HoursLabel.text = "\(numberOfTasksCompletedInPast24Hours!)"
+        
         let numberOfTasksCompletedInTotal = delegate?.totalNumberTasksCompleted()
         numberOfTasksCompletedInTotalLabel.text = "Total Number of Tasks Completed: \(numberOfTasksCompletedInTotal!)"
         

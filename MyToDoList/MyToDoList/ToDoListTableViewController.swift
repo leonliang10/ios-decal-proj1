@@ -17,8 +17,6 @@ protocol ModelDelegate {
 
 class ToDoListTableViewController: UITableViewController, ModelDelegate {
     
-    // Model
-    // let model = ["test1", "test2", "test3"]
     var listModel : ToDoListModel!
     var task : String!
     
